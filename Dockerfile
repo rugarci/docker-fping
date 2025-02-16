@@ -14,6 +14,6 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
     org.label-schema.vcs-type="Git" \
     org.label-schema.schema-version="1.0"
 
-RUN /bin/sh -c apk add --update --no-cache ca-certificates fping
+RUN apk add --update --no-cache ca-certificates fping
 
 ENTRYPOINT ["fping"]
